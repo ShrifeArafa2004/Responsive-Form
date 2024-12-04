@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(2, 2, 35, 0.992);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+section {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  background-color: #0000889f;
+  padding: 10px;
+}
+section input,
+button {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #0000aaa0;
+  border-style: none;
+  outline: none;
+  color: #fff;
+  border-radius: 4px;
+  flex-basis: 200px;
+  flex-grow: 1;
+  transition: 0.5s;
+}
+button {
+  background-color: #14a;
+}
+input:hover,
+button:hover {
+  transform: scale(1.1);
+}
+
+button:hover {
+  cursor: pointer;
+}
+.content {
+  display: flex;
+}
+h1 {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  top: 20px;
+  font-size: 50px;
+  text-align: center;
+  color: #5b8daa;
+  text-shadow: 10px 10px 10px #5b8daa;
+  text-align: center;
+  text-transform: capitalize;
+}
+h1::before {
+  content: "Hi : ";
+
+}
